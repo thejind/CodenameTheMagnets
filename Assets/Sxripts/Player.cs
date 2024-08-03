@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
+    public Magnetism magnetismState;
     // Start is called before the first frame update
     void Start()
     {
-        
+        magnetismState.updatePolarity(EMagneticPolarity.Neutral);
     }
 
     // Update is called once per frame
