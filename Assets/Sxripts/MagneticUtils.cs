@@ -6,7 +6,7 @@ public class MagneticUtils : MonoBehaviour
 {
     public void attraction(GameObject owner, GameObject otherObject)
     {
-
+        
     }
     public void repultion(GameObject owner, GameObject otherObject)
     {

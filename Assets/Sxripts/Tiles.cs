@@ -2,15 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Tiles : MonoBehaviour
 {
 
-    public Magnetism magnetismState;
-    
+    public Magnetism magneticState;
+    [SerializeField] EMagneticPolarity tilePolarity;
+
+    void Awake()
+    {
+        magneticState.updatePolarity(tilePolarity);
+    }
     // Start is called before the first frame update
     void Start()
     {
-        magnetismState.updatePolarity(EMagneticPolarity.Neutral);
+        
     }
 
     // Update is called once per frame
